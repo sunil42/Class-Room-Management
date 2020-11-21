@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".addstudent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/stoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Add Student"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layy"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ProgressBar
+                android:id="@+id/pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:indeterminateTint="@color/black"/>
+        </FrameLayout>
+        <Spinner
+            android:id="@+id/department"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:spinnerMode="dropdown"
+            android:fontFamily="@font/arvo"
+            android:entries="@array/Department"
+            android:background="@drawable/spinnerbg"/>
+        <Spinner
+            android:id="@+id/course"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/department"
+            android:layout_centerHorizontal="true"
+            android:spinnerMode="dropdown"
+            android:fontFamily="@font/arvo"
+            android:entries="@array/Courses"
+            android:background="@drawable/spinnerbg"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/studentenroll"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/course"
+            android:fontFamily="@font/arvo"
+            android:hint="Enrollment Number"
+
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:scrollHorizontally="true"
+            android:textCursorDrawable="@null"
+
+            app:met_textColorHint="#000"
+            android:inputType="number"
+            app:met_primaryColor="#000"
+            app:met_floatingLabel="highlight"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/studentname"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/studentenroll"
+            android:fontFamily="@font/arvo"
+            android:hint="Name"
+
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:scrollHorizontally="true"
+            android:textCursorDrawable="@null"
+
+            app:met_textColorHint="#000"
+            android:inputType="textPersonName"
+            app:met_primaryColor="#000"
+            app:met_floatingLabel="highlight"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/studentemail"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/arvo"
+            android:hint="Email"
+
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:scrollHorizontally="true"
+            android:textCursorDrawable="@null"
+
+            app:met_textColorHint="#000"
+            android:inputType="textEmailAddress"
+            app:met_primaryColor="#000"
+            app:met_floatingLabel="highlight"
+            android:layout_below="@id/studentname"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/studentphone"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/arvo"
+            android:hint="Phone"
+
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:scrollHorizontally="true"
+            android:textCursorDrawable="@null"
+
+            app:met_textColorHint="#000"
+            android:inputType="phone"
+            android:maxLength="12"
+            app:met_primaryColor="#000"
+            app:met_floatingLabel="highlight"
+            android:layout_below="@id/studentemail"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/arvo"
+            android:hint="Password"
+
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:scrollHorizontally="true"
+            android:textCursorDrawable="@null"
+
+            app:met_textColorHint="#000"
+            android:inputType="textPassword"
+            app:met_primaryColor="#000"
+            app:met_floatingLabel="highlight"
+            android:layout_below="@id/studentphone"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cpassword"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/arvo"
+            android:hint="Confirm Password"
+
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:scrollHorizontally="true"
+            android:textCursorDrawable="@null"
+
+            app:met_textColorHint="#000"
+            android:inputType="textPassword"
+            app:met_primaryColor="#000"
+            app:met_floatingLabel="highlight"
+            android:layout_below="@id/password"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layy"
+        android:text="Register"
+        android:textColor="#138ff7"
+        android:background="@drawable/buttonround"/>
+</RelativeLayout>

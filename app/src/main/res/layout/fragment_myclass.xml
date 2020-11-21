@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/appbg"
+    tools:context=".MyclassFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addteacher"
+                android:layout_width="280dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/addstudent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                app:cardPreventCornerOverlap="false">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/skyblue"
+                    android:text="Add Teacher"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/kotta_one"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addstudent"
+                android:layout_width="280dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                app:cardPreventCornerOverlap="false">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/skyblue"
+                    android:text="Add Student"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/kotta_one"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/classdetails"
+                android:layout_width="280dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/addstudent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                app:cardPreventCornerOverlap="false">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/skyblue"
+                    android:text="Class Details"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/kotta_one"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+</FrameLayout>

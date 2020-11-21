@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:background="@drawable/splashh"
+    tools:context=".splashscreen">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp">
+        <View
+            android:id="@+id/green"
+            android:layout_width="20dp"
+            android:layout_height="180dp"
+            android:background="@drawable/green"
+            android:layout_alignParentRight="true"/>
+        <View
+            android:id="@+id/white"
+            android:layout_width="20dp"
+            android:layout_height="140dp"
+            android:background="@drawable/white"
+            android:layout_toLeftOf="@id/green"/>
+        <View
+            android:id="@+id/orange"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:background="@drawable/orange"
+            android:layout_toLeftOf="@id/white"/>
+    </RelativeLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:src="@drawable/teahergif"
+        android:background="@drawable/logobackground"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/classr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Classroom"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="@font/kotta_one"
+        android:layout_above="@+id/manage"/>
+    <TextView
+        android:id="@+id/manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Management"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="@font/kotta_one"/>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".classdetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/atoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Class Details"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/teacherdetails"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:cardPreventCornerOverlap="false">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/skyblue"
+                android:text="Teacher Details"
+                android:textSize="25dp"
+                android:fontFamily="@font/kotta_one"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/studentdetail"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_below="@id/teacherdetails"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:cardPreventCornerOverlap="false">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:background="@color/skyblue"
+                android:fontFamily="@font/kotta_one"
+                android:gravity="center"
+                android:text="Student Details"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/attendancedetail"-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_below="@+id/studentdetail"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            app:cardElevation="15dp"-->
+<!--            app:cardPreventCornerOverlap="false">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/skyblue"-->
+<!--                android:text="Attendance Record"-->
+<!--                android:textSize="25dp"-->
+<!--                android:fontFamily="@font/kotta_one"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black"/>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

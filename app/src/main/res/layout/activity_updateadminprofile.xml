@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".updateadminprofile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ttoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Update Profile" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp">
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/kotta_one"
+            android:text="PROFILE"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlo1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="60dp"
+            android:layout_below="@id/profile"
+            android:layout_above="@id/updprofile"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:id="@+id/lo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="13dp"
+                    android:src="@drawable/ic_baseline_account_circle_24"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/aname"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_toRightOf="@id/userlogo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:hint="Name"
+                    android:fontFamily="@font/arvo"
+                    android:textColor="@color/black"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:scrollHorizontally="true"
+                    android:textCursorDrawable="@null"
+
+                    app:met_primaryColor="#000"
+                    app:met_textColorHint="#000"
+                    app:met_floatingLabelTextColor="@color/black"
+                    app:met_floatingLabel="highlight"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo2"
+                android:layout_below="@id/lo1"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/maillogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="13dp"
+                    android:src="@drawable/ic_email_black_24dp"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/aemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_toRightOf="@id/maillogo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:hint="Email"
+                    android:fontFamily="@font/arvo"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:scrollHorizontally="true"
+                    android:textCursorDrawable="@null"
+
+                    app:met_primaryColor="#000"
+                    app:met_textColorHint="#000"
+                    app:met_floatingLabelTextColor="@color/black"
+                    app:met_floatingLabel="highlight"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo3"
+                android:layout_below="@id/lo2"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/phonelogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="13dp"
+                    android:src="@drawable/ic_local_phone_black_24dp"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/aphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_toRightOf="@id/phonelogo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:hint="Phone"
+                    android:fontFamily="@font/arvo"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:scrollHorizontally="true"
+                    android:textCursorDrawable="@null"
+
+                    app:met_primaryColor="#000"
+                    app:met_textColorHint="#000"
+                    app:met_floatingLabelTextColor="@color/black"
+                    app:met_floatingLabel="highlight"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/updprofile"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="UPDATE"
+            android:textColor="#138ff7"
+            android:background="@drawable/buttonround"/>
+
+        <Button
+            android:id="@+id/cnl"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="CANCEL"
+            android:textColor="#138ff7"
+            android:background="@drawable/buttonround"/>
+    </RelativeLayout>
+</RelativeLayout>

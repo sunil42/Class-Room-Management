@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "961658889011",
+    "firebase_url": "https://classroom-management-9c90f.firebaseio.com",
+    "project_id": "classroom-management-9c90f",
+    "storage_bucket": "classroom-management-9c90f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961658889011:android:2ef71de3ece3d530035446",
+        "android_client_info": {
+          "package_name": "com.example.classroommanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961658889011-td76ttgq6ru7g0ss2f8vq9bgn84r3spp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.classroommanagement",
+            "certificate_hash": "997ba548069424279a3aa25af60ec36f3503c83b"
+          }
+        },
+        {
+          "client_id": "961658889011-ca1pq1klqkvifrhhq2v32pln9r5n889e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs_DfwpzVyFMBSQibYpfZ6sryBwvqE5hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961658889011-ca1pq1klqkvifrhhq2v32pln9r5n889e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

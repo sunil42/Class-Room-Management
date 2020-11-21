@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NotesupFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="65dp"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="15dp">
+
+        <EditText
+            android:id="@+id/pdfname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/enterfilename"
+            android:hint="Pdf Name"
+            android:fontFamily="@font/arvo"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/textstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/pdfname"
+            android:layout_centerHorizontal="true"
+            android:text="No Files Selected"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/arvo"/>
+        <Button
+            android:id="@+id/choosepdf"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/pdfname"
+            android:text="CHOOSE"
+            android:textColor="#138ff7"
+            android:background="@drawable/buttonround"/>
+        <Button
+            android:id="@+id/uploadpdf"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/pdfname"
+            android:text="UPLOAD"
+            android:textColor="#138ff7"
+            android:background="@drawable/buttonround"/>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/uploadpdf"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:choiceMode="singleChoice"
+            android:divider="@color/black"
+            android:dividerHeight="0.5dp"
+            android:background="@color/white"/>
+    </RelativeLayout>
+</FrameLayout>
